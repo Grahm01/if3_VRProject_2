@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointTracker : MonoBehaviour
+public class ScoreCount : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public float timer = 0f;
+
     void Start()
     {
         
@@ -13,6 +15,7 @@ public class PointTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        Debug.Log(timer);
     }
 }
