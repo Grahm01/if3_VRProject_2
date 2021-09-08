@@ -8,6 +8,7 @@ public class SimpleTrigger : MonoBehaviour
 
     public Rigidbody triggerBody; 
     public UnityEvent onTriggerEnter;
+    public int counter  = 0;
 
 
     void OnTriggerEnter(Collider other){
@@ -17,6 +18,7 @@ public class SimpleTrigger : MonoBehaviour
         //only trigger if the triggerBody matches
         var hitRb = other.attachedRigidbody;
         if (hitRb == triggerBody){
+            counter += 1;
             onTriggerEnter.Invoke();
         }
     }
