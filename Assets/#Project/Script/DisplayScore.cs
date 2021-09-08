@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class DisplayScore : MonoBehaviour
 {
-    public Text tmpText;
+    public Text timeDisplay;
+    public Text Score;
     public float timer;
+    public int counter;
     // Start is called before the first frame update
     void Start()
     {
+        counter = PlayerPrefs.GetInt("Score",counter);
     }
 
     // Update is called once per frame
@@ -18,7 +21,8 @@ public class DisplayScore : MonoBehaviour
         timer += Time.deltaTime;
         Debug.Log(timer);
 
-        tmpText.text = "Time: " + timer.ToString("N2");
+        timeDisplay.text = "Time: " + timer.ToString("N2");
+        Score.text = "Score: " + counter.ToString();
         
     }
 }
