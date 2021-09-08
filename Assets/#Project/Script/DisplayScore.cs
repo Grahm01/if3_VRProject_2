@@ -18,7 +18,7 @@ public class DisplayScore : MonoBehaviour
         timer += Time.deltaTime;
         Debug.Log(timer);
 
-        tmpText.text = "Time: \n" + timer.ToString("N2");
+        tmpText.text = "Time: " + timer.ToString("N2");
         
     }
 }
