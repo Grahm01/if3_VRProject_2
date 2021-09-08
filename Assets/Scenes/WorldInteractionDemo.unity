@@ -6376,6 +6376,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1145377229}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894619302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7224993137556736623, guid: 4f22af55687056640adaf6435085e847,
+    type: 3}
+  m_PrefabInstance: {fileID: 2094674375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1894619307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894619302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1903439471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7212,6 +7250,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7224993137556736616, guid: 4f22af55687056640adaf6435085e847,
+        type: 3}
+      propertyPath: m_PositionAction.m_Id
+      value: 9ba44e7d-f5fb-42e4-aa15-47095dd46da8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224993137556736616, guid: 4f22af55687056640adaf6435085e847,
+        type: 3}
+      propertyPath: m_RotationAction.m_Id
+      value: f7abb6b0-239b-4660-8087-41c606052f11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224993137556736616, guid: 4f22af55687056640adaf6435085e847,
+        type: 3}
+      propertyPath: m_PositionAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: c8506d36-ba75-4492-96ba-a5bd81bee9fb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224993137556736616, guid: 4f22af55687056640adaf6435085e847,
+        type: 3}
+      propertyPath: m_RotationAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: f7327bb3-0fb2-4972-b0b6-dae61d5f097d
+      objectReference: {fileID: 0}
     - target: {fileID: 7224993139035943337, guid: 4f22af55687056640adaf6435085e847,
         type: 3}
       propertyPath: m_RootOrder
@@ -7272,6 +7330,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 7224993139035943343, guid: 4f22af55687056640adaf6435085e847,
+        type: 3}
+      propertyPath: m_ActionAssets.Array.data[0]
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f22af55687056640adaf6435085e847, type: 3}
 --- !u!1 &2143694267
