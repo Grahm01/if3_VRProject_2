@@ -22,10 +22,4 @@ public class SimpleTrigger : MonoBehaviour
             onTriggerEnter.Invoke();
         }
     }
-
-    void Update()
-    {
-        
-    }
-
 }
