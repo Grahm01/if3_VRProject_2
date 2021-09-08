@@ -11,8 +11,8 @@ public class SimpleTrigger : MonoBehaviour
     public int counter = 0;
     
     void Start() 
-    {
-
+    {   
+        PlayerPrefs.SetInt("Score",0);
     }
 
 
@@ -29,4 +29,8 @@ public class SimpleTrigger : MonoBehaviour
 
         PlayerPrefs.SetInt("Score",counter);
     }
+
+
 }
+
+
