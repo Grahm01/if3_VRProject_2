@@ -8,7 +8,7 @@ public class SimpleTrigger : MonoBehaviour
 
     public Rigidbody triggerBody; 
     public UnityEvent onTriggerEnter;
-    public int counter;
+    public int counter = 0;
     
     void Start() 
     {
@@ -24,8 +24,9 @@ public class SimpleTrigger : MonoBehaviour
         var hitRb = other.attachedRigidbody;
         if (hitRb == triggerBody){
             counter += 1;
-            PlayerPrefs.SetInt("Score",counter);
             onTriggerEnter.Invoke();
         }
+
+        PlayerPrefs.SetInt("Score",counter);
     }
 }
