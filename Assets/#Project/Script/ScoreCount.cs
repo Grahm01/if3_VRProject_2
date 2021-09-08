@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ScoreCount : MonoBehaviour
 {
 
     public float timer = 0f;
-
     void Start()
     {
         
@@ -17,5 +17,6 @@ public class ScoreCount : MonoBehaviour
     {
         timer += Time.deltaTime;
         Debug.Log(timer);
+
     }
 }
