@@ -23,4 +23,9 @@ public class SimpleTrigger : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        
+    }
+
 }
