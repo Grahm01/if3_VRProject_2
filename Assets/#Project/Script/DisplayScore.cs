@@ -12,12 +12,14 @@ public class DisplayScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        counter = PlayerPrefs.GetInt("Score",counter);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        counter = PlayerPrefs.GetInt("Score",counter);
+        
         timer += Time.deltaTime;
         Debug.Log(timer);
 
